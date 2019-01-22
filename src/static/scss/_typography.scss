@@ -173,6 +173,38 @@ img[align="right"] {
 		}
 	}
 
+	&_icon-traffic {
+		@include before-img(inline-block, 55px, 55px, r) {
+			background-image: url(../img/icons/traffic.png);
+			margin-bottom: 10px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&_icon-web {
+		@include before-img(inline-block, 55px, 55px, r) {
+			background-image: url(../img/icons/web.png);
+			margin-bottom: 10px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&_icon-coverage {
+		@include before-img(inline-block, 55px, 55px, r) {
+			background-image: url(../img/icons/coverage.png);
+			margin-bottom: 10px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&_icon-loyal {
+		@include before-img(inline-block, 55px, 55px, r) {
+			background-image: url(../img/icons/loyal.png);
+			margin-bottom: 10px;
+			background-repeat: no-repeat;
+		}
+	}
+
 	&_btn {
 		&__brd {
 			@include lm-btn(b, white, white, y, f, white, black);
@@ -180,6 +212,14 @@ img[align="right"] {
 			&_blue {
 				@include lm-btn(b, #00B7F3, #00B7F3, y, f, #00B7F3, white);
 			}
+		}
+	}
+
+	&_title{
+		&__left{
+			font-size: 3em;
+			font-weight: 600;
+			color: white;
 		}
 	}
 }

@@ -1,4 +1,11 @@
-@include font-face("OpenSans", "../../assets/fonts/OpenSans/OpenSansRegular/OpenSansRegular", 500);
-@include font-face("OpenSans", "../../assets/fonts/OpenSans/OpenSansBold/OpenSansBold", bold);
-@include font-face("OpenSans", "../../assets/fonts/OpenSans/OpenSansSemibold/OpenSansSemibold", 600);
-@include font-face("OpenSans", "../../assets/fonts/OpenSans/OpenSansExtrabold/OpenSansExtrabold", 800);
+// @include font-face("OpenSans", "../fonts/OpenSans/OpenSansRegular/OpenSansRegular", 500);
+// @include font-face("OpenSans", "../fonts/OpenSans/OpenSansBold/OpenSansBold", bold);
+// @include font-face("OpenSans", "../fonts/OpenSans/OpenSansSemibold/OpenSansSemibold", 600);
+// @include font-face("OpenSans", "../fonts/OpenSans/OpenSansExtrabold/OpenSansExtrabold", 800);
+
+@include font-face("OpenSans2", "../fonts/OpenSans2/OpenSans-Regular", 500);
+@include font-face("OpenSans2", "../fonts/OpenSans2/OpenSans-Light", 400);
+@include font-face("OpenSans2", "../fonts/OpenSans2/OpenSansBold/OpenSansBold", bold);
+@include font-face("OpenSans2", "../fonts/OpenSans2/OpenSans-Semibold", 600);
+@include font-face("OpenSans2", "../fonts/OpenSans2/OpenSans-Bold", 700);
+@include font-face("OpenSans2", "../fonts/OpenSans2/OpenSans-Bold", bold);
