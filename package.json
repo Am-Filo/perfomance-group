@@ -1,0 +1,29 @@
+{
+	"name": "lamiqv",
+	"version": "1.1.3",
+	"description": "lami develop",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "lami qv",
+	"license": "ISC",
+	"devDependencies": {
+		"gulp-autoprefixer": "*",
+		"gulp-file-include": "*",
+		"gulp-imagemin": "*",
+		"gulp-clean-css": "*",
+		"browser-sync": "*",
+		"gulp-rename": "*",
+		"gulp-concat": "*",
+		"gulp-uglify": "*",
+		"gulp-notify": "*",
+		"gulp-cache": "*",
+		"gulp-sass": "*",
+		"gulp": "3.9.1",
+		"del": "*"
+	},
+	"dependencies": {
+		"npm": "*"
+	}
+}

@@ -1,0 +1,38 @@
+//----------------------------------------------------//
+// LAYOUT                                             //
+//----------------------------------------------------//
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	min-width: 320px;
+}
+
+.container {
+	padding: 0 15px;
+	width: 970px;
+	max-width: 100%;
+	margin: 0 auto;
+	@include clearfix;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.content-title {
+	@extend h2;
+	display: block;
+	text-align: center;
+	color: $gray;
+	padding: 0 0 40px 0;
+	position: relative;
+	@include b(mobile) {
+		padding: 0 0 40px;
+	}
+}

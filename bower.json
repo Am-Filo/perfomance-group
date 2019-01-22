@@ -1,0 +1,9 @@
+{
+	"name": "lamiqv",
+	"dependencies": {
+		"fancybox": "latest",
+		"swiper": "latest",
+		"jquery": "latest",
+		"vue": "latest"
+	}
+}

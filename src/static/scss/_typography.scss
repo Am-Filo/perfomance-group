@@ -1,0 +1,185 @@
+// =============================================
+// base typograthy
+// =============================================
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: transparent;
+	color: pink;
+}
+
+* {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $mainFont;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 47px;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 300;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 300;
+}
+
+h6 {
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+hr {
+	overflow: hidden;
+	height: 1px;
+	background: $gray;
+	border: 0;
+	margin: 15px 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	//li {}
+}
+
+ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+	counter-reset: item;
+
+	li {
+		display: block;
+		position: relative;
+
+		&:before {
+			content: counters(item, ".") ". ";
+			counter-increment: item;
+			display: inline;
+			vertical-align: top;
+			font-weight: 700;
+		}
+	}
+}
+
+q,
+blockquote {
+	text-align: center;
+	display: block;
+	font-style: italic;
+}
+
+strong,
+b {
+	font-weight: 700;
+}
+
+a {
+	color: $blue;
+	transition: all .2s ease;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	//&:active {}
+
+	//&:visited {}
+}
+
+img[style*="float: left"],
+img[style*="float:left"],
+img[align="left"] {
+	margin: 0 20px 5px 0;
+}
+
+img[style*="float: right"],
+img[style*="float:right"],
+img[align="right"] {
+	margin: 0 0 5px 20px;
+}
+
+// =============================================
+// icons
+// =============================================
+
+[class*="icon-"] {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.lm {
+	&_icon-analytic {
+		@include before-img(inline-block, 85px, 85px, r) {
+			background-image: url(../img/icons/analytica.png);
+			margin-right: 20px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&_icon-statistica {
+		@include before-img(inline-block, 85px, 85px, r) {
+			background-image: url(../img/icons/statistica.png);
+			margin-right: 20px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&_icon-sell {
+		@include before-img(inline-block, 85px, 85px, r) {
+			background-image: url(../img/icons/sell.png);
+			margin-right: 20px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&_btn {
+		&__brd {
+			@include lm-btn(b, white, white, y, f, white, black);
+
+			&_blue {
+				@include lm-btn(b, #00B7F3, #00B7F3, y, f, #00B7F3, white);
+			}
+		}
+	}
+}
