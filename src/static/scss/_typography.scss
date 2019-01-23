@@ -11,6 +11,10 @@
 	color: pink;
 }
 
+input[type=checkbox]{
+
+}
+
 * {
 	outline: none;
 }
@@ -205,6 +209,14 @@ img[align="right"] {
 		}
 	}
 
+	&_icon-calc {
+		@include before-img(inline-block, 22px, 22px, r) {
+			background-image: url(../img/icons/calculator.png);
+			margin-right: 10px;
+			background-repeat: no-repeat;
+		}
+	}
+
 	&_btn {
 		&__brd {
 			@include lm-btn(b, white, white, y, f, white, black);
@@ -213,13 +225,72 @@ img[align="right"] {
 				@include lm-btn(b, #00B7F3, #00B7F3, y, f, #00B7F3, white);
 			}
 		}
+
+		&__fill {
+			@include lm-btn(f, white, black, y, f, white, black);
+
+			&_blue {
+				@include lm-btn(f, #1D7DB7, white, y, f, #00B7F3, white);
+			}
+		}
 	}
 
-	&_title{
-		&__left{
+	&_input{
+		background-color: rgba(148, 157, 188, 0.5);
+		color: white;
+		border-radius: 5px;
+		border: none;
+		box-shadow: none;
+		outline: none;
+		font-size: 16px;
+		padding: 15px;
+		transition: 0.5s;
+		&:active,&:hover,&:focus{
+			background-color: #949DBC;
+		}
+		&::placeholder{
+			color: white;
+		}
+	}
+
+	&_title {
+		&__left {
 			font-size: 3em;
 			font-weight: 600;
 			color: white;
+
+			@include b(600) {
+				font-size: 2em;
+			}
+		}
+
+		&__right {
+			line-height: 1.1;
+			padding: 0 10px;
+
+			.lm_title {
+				&_first {
+					display: block;
+					font-size: 35px;
+					color: #414956;
+					font-weight: bold;
+
+					@include b(600) {
+						font-size: 25px;
+					}
+				}
+
+				&_second {
+					display: block;
+					font-size: 25px;
+					color: #414956;
+					font-weight: 600;
+
+					@include b(600) {
+						font-size: 25px;
+					}
+				}
+			}
 		}
 	}
 }

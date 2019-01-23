@@ -1,0 +1,119 @@
+.lm_form {
+	color: white;
+	position: relative;
+	position: relative;
+	padding: 100px 0;
+	cursor: context-menu;
+	background-image: url(../img/prop/middle_form.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include b(800) {
+		padding: 80px 0;
+	}
+
+	// @include before-img(inline-block, 100%, 100%, a) {
+	// 	background-image: url(../img/prop/middle_form.png);
+	// 	background-repeat: no-repeat;
+	// 	z-index: -1;
+	// 	background-color: #F3F3F5;
+	// 	left: 0;
+	// 	top: 0;
+	// }
+
+	&_wrap {
+		z-index: 1;
+
+		.lm_form_title {
+			line-height: 1.3;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&_first {
+				font-size: 40px;
+				font-weight: bold;
+
+				@include b(800) {
+					font-size: 35px;
+				}
+
+				@include b(500) {
+					font-size: 7vw;
+					text-align: center;
+					margin-top: 10px;
+				}
+			}
+
+			&_second {
+				font-size: 25px;
+				font-weight: 600;
+
+				@include b(800) {
+					font-size: 18px;
+				}
+
+				@include b(500) {
+					font-size: 4.5vw;
+					text-align: center;
+					margin-top: 10px;
+				}
+			}
+		}
+
+		.lm_form_form {
+			form {
+				display: grid;
+				grid-template-columns: 250px 250px 250px;
+				grid-template-areas: 'formtext formtel formbutton''formcheckbox formcheckbox formcheckbox';
+				grid-template-rows: 60px 20px;
+				grid-gap: 20px;
+				justify-content: center;
+				margin: 50px 0;
+
+				@include b(800) {
+					grid-template-columns: minmax(150px, 300px) minmax(150px, 300px);
+					grid-template-areas: "formtext formtel""formcheckbox formcheckbox""formbutton formbutton";
+					padding: 0 20px;
+					grid-template-rows: 60px 40px 60px;
+				}
+
+				@include b(500) {
+					grid-template-columns: 1fr;
+					grid-template-areas: "formtext""formtel""formcheckbox""formbutton";
+					padding: 0 20px;
+					grid-template-rows: repeat(4, 60px);
+				}
+
+				input[type=text] {
+					grid-area: formtext;
+				}
+
+				input[type=tel] {
+					grid-area: formtel;
+				}
+
+				button {
+					grid-area: formbutton;
+					outline: none;
+				}
+
+				.lm_form-group_checkbox {
+					grid-area: formcheckbox;
+
+					a {
+						text-decoration: underline;
+						color: white;
+						cursor: pointer;
+					}
+
+					@include b(500) {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+
+	}
+}

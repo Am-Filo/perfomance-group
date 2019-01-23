@@ -1,0 +1,155 @@
+.indicators {
+	overflow: hidden;
+	padding: 100px 50px;
+	position: relative;
+
+		@include b(1000) {
+			padding: 80px 20px;
+		}
+
+	@include b(600) {
+		padding: 50px 0px;
+	}
+
+	@include before-img(inline-block, 100%, 100%, a) {
+		background-image: url(../img/prop/indicators.png);
+		background-repeat: no-repeat;
+		z-index: -1;
+		background-color: #F3F3F5;
+		left: 0;
+		top: 0;
+	}
+
+	&_wrap {
+		width: max-content;
+		float: right;
+		cursor: context-menu;
+
+		@include b(600) {
+			float: auto;
+			width: 100%;
+		}
+
+		.indicators_items {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(200px, 250px));
+			grid-gap: 10px;
+			margin-top: 50px;
+
+			@include b(1200) {
+				grid-template-columns: repeat(3, 180px);
+			}
+
+			@include b(1000) {
+				grid-template-columns: repeat(3, 150px);
+			}
+
+			@include b(600) {
+				grid-template-columns: repeat(2, minmax(150px, max-content));
+				justify-content: center;
+				padding: 0 10px;
+				grid-gap: 5px;
+			}
+
+			.indicators_item {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				height: 150px;
+
+				@include b(600) {
+					height: 120px;
+				}
+
+				&:nth-child(2) {
+					.indicators_item_after {
+						background-color: #2F5F87;
+
+						&:before {
+							background-color: #2F5F87;
+						}
+					}
+				}
+
+				&:nth-child(3) {
+					.indicators_item_after {
+						background-color: #4A97B5;
+
+						&:before {
+							background-color: #4A97B5;
+						}
+					}
+				}
+
+				&:nth-child(4) {
+					.indicators_item_after {
+						background-color: #2F5F87;
+
+						&:before {
+							background-color: #2F5F87;
+						}
+					}
+				}
+
+				&:nth-child(5) {
+					.indicators_item_after {
+						background-color: #4A97B5;
+
+						&:before {
+							background-color: #4A97B5;
+						}
+					}
+				}
+
+				&_before {
+					padding: 5px 0 5px 15px;
+					font-weight: bold;
+					background-color: white;
+					width: 150px;
+
+					@include b(1200) {
+						width: 100px;
+					}
+
+					@include b(1000) {
+						width: 80px;
+					}
+				}
+
+				&_after {
+					position: relative;
+					padding: 8px 0 8px 15px;
+					color: white;
+					background-color: #00B7F3;
+					width: 200px;
+					font-weight: 600;
+
+					@include b(1200) {
+						width: 150px;
+					}
+
+					@include b(1000) {
+						width: 120px;
+					}
+
+					&:before {
+						content: '';
+						position: absolute;
+						width: 24px;
+						height: 15px;
+						background-color: #00b7f3;
+						top: 13px;
+						right: -13px;
+						transform: rotate(69deg) skew(45deg);
+					}
+				}
+
+				&_info {
+					padding: 8px 0 8px 0px;
+					color: #1F90B8;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

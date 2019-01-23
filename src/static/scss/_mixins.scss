@@ -243,6 +243,7 @@
 	font-weight: 600;
 	letter-spacing: 1.1px;
 	color: $clText;
+	cursor: pointer;
 
 	@if $type==b {
 		border: 3px solid $clMain;
@@ -250,6 +251,7 @@
 
 	@if $type==f {
 		background-color: $clMain;
+		border: none;
 	}
 
 	@if $shadow==y {

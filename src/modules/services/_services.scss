@@ -2,15 +2,36 @@
 	background-image: url(../img/prop/services.png);
 	background-position: center;
 	background-size: cover;
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+
+	@include b(1400) {
+		padding: 20px;
+	}
 
 	&_wrap {
-		padding: 50px;
+		//padding: 50px;
+		width: 100%;
 
 		.services_items {
 			display: grid;
-			grid-template-columns: repeat(4, 310px);
+			grid-template-columns: repeat(4, minmax(285px, 310px));
 			grid-gap: 20px;
 			margin-top: 50px;
+			justify-content: center;
+
+			@include b(1400) {
+				grid-gap: 10px;
+			}
+
+			@include b(1200) {
+				grid-template-columns: repeat(2, minmax(285px, 310px));
+			}
+
+			@include b(600) {
+				grid-template-columns: repeat(1, minmax(285px, 310px));
+			}
 
 			.service_item {
 				position: relative;
@@ -24,6 +45,12 @@
 						img {
 							filter: brightness(0.9);
 							transition: 0.5s;
+						}
+					}
+
+					@include b(1200) {
+						&:hover {
+							transform: scale(1.1);
 						}
 					}
 
@@ -90,9 +117,17 @@
 
 		.service_button {
 			margin-top: 100px;
+			display: flex;
+			justify-content: center;
 
 			a {
-				display: block;
+				display: flex;
+				justify-content: center;
+				width: 250px;
+				color: white;
+				text-transform: uppercase;
+				align-items: center;
+				font-size: 12px;
 			}
 		}
 	}
