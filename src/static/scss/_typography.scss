@@ -11,9 +11,11 @@
 	color: pink;
 }
 
-input[type=checkbox]{
-
+.hidden{
+	display: none !important;
 }
+
+input[type=checkbox] {}
 
 * {
 	outline: none;
@@ -217,6 +219,49 @@ img[align="right"] {
 		}
 	}
 
+	&_icon-list {
+		@include before-img(inline-block, 18px, 15px, r) {
+			background-image: url(../img/icons/list.png);
+			margin-right: 30px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&_icon-pr {
+		&::before {
+			content: 'c';
+			font-family: 'lmIcon';
+		}
+	}
+
+	&_icon-shop {
+		&::before {
+			content: 'd';
+			font-family: 'lmIcon';
+		}
+	}
+
+	&_icon-build {
+		&::before {
+			content: 'e';
+			font-family: 'lmIcon';
+		}
+	}
+
+	&_icon-gov {
+		&::before {
+			content: 'a';
+			font-family: 'lmIcon';
+		}
+	}
+
+	&_icon-else {
+		&::before {
+			content: 'b';
+			font-family: 'lmIcon';
+		}
+	}
+
 	&_btn {
 		&__brd {
 			@include lm-btn(b, white, white, y, f, white, black);
@@ -232,10 +277,14 @@ img[align="right"] {
 			&_blue {
 				@include lm-btn(f, #1D7DB7, white, y, f, #00B7F3, white);
 			}
+
+			&_dark-blue {
+				@include lm-btn(f, #2A5067, white, y, f, #00B7F3, white);
+			}
 		}
 	}
 
-	&_input{
+	&_input {
 		background-color: rgba(148, 157, 188, 0.5);
 		color: white;
 		border-radius: 5px;
@@ -245,10 +294,14 @@ img[align="right"] {
 		font-size: 16px;
 		padding: 15px;
 		transition: 0.5s;
-		&:active,&:hover,&:focus{
+
+		&:active,
+		&:hover,
+		&:focus {
 			background-color: #949DBC;
 		}
-		&::placeholder{
+
+		&::placeholder {
 			color: white;
 		}
 	}

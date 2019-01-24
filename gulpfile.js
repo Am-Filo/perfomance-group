@@ -48,7 +48,8 @@ gulp.task('js', function () {
 
 gulp.task('js:dev', ['js'], function () {
 	return gulp.src([
-			//'assets/libs/jquery/dist/jquery.min.js',
+			'src/assets/libs/jquery/dist/jquery.min.js',
+			'src/assets/libs/swiper/dist/js/swiper.min.js',
 			'src/assets/js/common.min.js',
 		])
 		.pipe(concat('scripts.min.js'))
