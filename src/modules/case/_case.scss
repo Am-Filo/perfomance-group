@@ -18,6 +18,10 @@
 	.case_wrap {
 		padding-top: 100px;
 
+		@include b(600) {
+			padding-top: 30px;
+		}
+
 		.case_title {
 			width: 100%;
 			font-size: 40px;
@@ -25,6 +29,11 @@
 			text-align: center;
 			font-weight: 600;
 			margin-bottom: 80px;
+
+			@include b(600) {
+				margin-bottom: 20px;
+				font-size: 25px;
+			}
 		}
 
 		.cases {
@@ -63,14 +72,25 @@
 					align-items: center;
 					grid-template-columns: 200px 1fr;
 					background-color: #1D7DB7;
+					grid-gap: 20px;
 					color: white;
 
-					@include b(800){
-						grid-template-columns: minmax(110px, 200px) 1fr;
+					@include b(800) {
+						grid-template-columns: minmax(100px, 130px) 1fr;
+						grid-gap: 5px;
+					}
+
+					@include b(600) {
+						padding: 10px;
 					}
 
 					&_img {
-						img {}
+						display: flex;
+						flex-direction: column;
+
+						img {
+							width: 100%;
+						}
 					}
 
 					&_text {
@@ -105,10 +125,12 @@
 				grid-column: 1/3;
 				margin: 50px 0;
 				padding: 25px 0;
-				@include b(800){
+
+				@include b(800) {
 					grid-column: 1;
+					margin: 30px 0;
 				}
-				
+
 			}
 		}
 	}

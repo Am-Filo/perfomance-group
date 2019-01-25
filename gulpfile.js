@@ -17,8 +17,9 @@ var gulp = require('gulp'),
 gulp.task('browser-sync', function () {
 	browserSync({
 		server: {
-			baseDir: 'src'
+			baseDir: 'src',
 		},
+		port: 3000,
 		notify: false,
 	});
 });
@@ -50,6 +51,7 @@ gulp.task('js:dev', ['js'], function () {
 	return gulp.src([
 			'src/assets/libs/jquery/dist/jquery.min.js',
 			'src/assets/libs/swiper/dist/js/swiper.min.js',
+			'src/assets/libs/fancybox/dist/jquery.fancybox.min.js',
 			'src/assets/js/common.min.js',
 		])
 		.pipe(concat('scripts.min.js'))

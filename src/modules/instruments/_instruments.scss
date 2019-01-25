@@ -27,7 +27,7 @@
 }
 
 .swiper-pagination {
-	margin-top: 30px;
+	margin-top: 50px;
 	z-index: 9999;
 	display: flex;
 	justify-content: space-between;
@@ -46,23 +46,72 @@
 	background: #1B7EB7;
 }
 
+.swiper-button-next {
+	background: url(../img/icons/arrow-right.png);
+	width: 60px;
+	height: 60px;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-right: 120px;
+	margin-top: 20px;
+
+	@include b(1400) {
+		margin: 0;
+	}
+
+	@include b(1000) {
+		display: none;
+	}
+}
+
+.swiper-button-prev {
+	background: url(../img/icons/arrow-left.png);
+	width: 60px;
+	height: 60px;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-left: 120px;
+	margin-top: 20px;
+
+	@include b(1400) {
+		margin: 0;
+	}
+
+	@include b(1000) {
+		display: none;
+	}
+}
+
 .insruments {
-	padding: 50px 20px;
+	position: relative;
+	padding: 0 100px 50px 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	@include b(1000) {
+		padding: 0 20px 50px 20px;
+	}
 
 	.insruments_title {
 		width: 100%;
 		text-align: center;
 		margin: 50px 0 100px 0;
 
+		@include b(800) {
+			margin: 20px 0 30px 0;
+		}
+
 		.insruments_title_text {
 			font-weight: bold;
-			font-size: 50px;
+			font-size: 40px;
 			line-height: 1;
 			color: #424856;
+
+			@include b(800) {
+				font-size: 20px;
+			}
 		}
 	}
 

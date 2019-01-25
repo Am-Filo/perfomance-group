@@ -1,9 +1,9 @@
 .indicators {
 	overflow: hidden;
-	padding: 100px 50px;
+	padding: 90px 50px;
 	position: relative;
 
-		@include b(1000) {
+		@include b(1100) {
 			padding: 80px 20px;
 		}
 

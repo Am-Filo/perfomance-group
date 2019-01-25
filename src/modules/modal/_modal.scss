@@ -1,0 +1,14 @@
+.modal_form {
+	background-image: url(../img/prop/middle_form.png);
+	background-position: center;
+	//background-size: 100% 107%;
+	background-size: cover;
+	border-radius: 5px;
+	color: white;
+}
+
+#qModal{
+	@include b(600){
+		padding: 40px 0px;
+	}
+}

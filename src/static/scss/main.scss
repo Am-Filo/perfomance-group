@@ -13,6 +13,7 @@
 // =============================================
 
 @import "../../assets/libs/swiper/dist/css/swiper.min.css";
+@import "../../assets/libs/fancybox/dist/jquery.fancybox.min.css";
 
 // =============================================
 // work flow
@@ -28,6 +29,7 @@
 @import "../../modules/work/work";
 @import "../../modules/instruments/instruments";
 @import "../../modules/footer/footer";
+@import "../../modules/modal/modal";
 
 body {
 	min-width: 320px;
