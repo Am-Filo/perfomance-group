@@ -51,6 +51,7 @@ gulp.task('js:dev', ['js'], function () {
 	return gulp.src([
 			'src/assets/libs/jquery/dist/jquery.min.js',
 			'src/assets/libs/swiper/dist/js/swiper.min.js',
+			'src/assets/libs/aos/dist/aos.js',
 			'src/assets/libs/fancybox/dist/jquery.fancybox.min.js',
 			'src/assets/js/common.min.js',
 		])
@@ -111,9 +112,14 @@ gulp.task('img:build', function () {
 		.pipe(gulp.dest('dist/assets/img'));
 });
 
-gulp.task('html:build', function () {
-	return gulp.src('src/*.html')
-		.pipe(gulp.dest('dist/html'));
+gulp.task('font:build', function () {
+	return gulp.src('src/assets/fonts/**/*')
+		.pipe(gulp.dest('dist/assets/fonts'));
 });
 
-gulp.task('build', ['removedist', 'clearcache',	'js:build', 'css:build', 'img:build', 'html:build']);
+gulp.task('html:build', function () {
+	return gulp.src('src/*.html')
+		.pipe(gulp.dest('dist/'));
+});
+
+gulp.task('build', ['removedist', 'clearcache',	'js:build', 'css:build', 'img:build','font:build', 'html:build']);

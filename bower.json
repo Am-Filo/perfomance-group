@@ -1,9 +1,10 @@
 {
-	"name": "lamiqv",
-	"dependencies": {
-		"fancybox": "latest",
-		"swiper": "latest",
-		"jquery": "latest",
-		"vue": "latest"
-	}
+  "name": "lamiqv",
+  "dependencies": {
+    "fancybox": "latest",
+    "swiper": "latest",
+    "jquery": "latest",
+    "vue": "latest",
+    "aos": "^2.3.4"
+  }
 }

@@ -27,7 +27,7 @@ $(function () {
 				else $(this).addClass('hidden');
 			})
 		})
-	})
+	});
 
 	// sllider
 
@@ -55,5 +55,7 @@ $(function () {
 			}
 		}
 	});
+
+	AOS.init();
 
 });
