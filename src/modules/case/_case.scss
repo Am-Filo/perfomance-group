@@ -42,7 +42,7 @@
 			grid-template-columns: repeat(2, minmax(320px, 600px));
 			grid-gap: 20px;
 			//padding: 0 0 50px;
-			padding: 0 20px;
+			padding: 0 0 30px 20px;
 
 			@include b(800) {
 				grid-template-columns: minmax(320px, 600px);
@@ -51,6 +51,10 @@
 			.case {
 				display: grid;
 				grid-template-columns: 1fr;
+
+				&:hover{
+					cursor: pointer;
+				}
 
 				&_img {
 					display: flex;

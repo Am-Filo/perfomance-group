@@ -83,7 +83,7 @@ header {
 			grid-template-columns: repeat(3, max-content);
 			justify-content: center;
 			transition: 0.5s;
-			margin: 80px 0;
+			margin: 30px 0 40px 0;
 
 			@include b(750) {
 				grid-gap: 10px;
