@@ -1,0 +1,40 @@
+.get-analysis{
+  background-color: gray;
+  padding: 50px;
+  &_wrap{
+    .get-analysis_title{
+      width: 100%;
+      display: block;
+      .lm_title{
+        display: block;
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        margin: 30px 0 50px 0;
+      }
+    }
+
+    .get-analysis_content{
+      .get-analysis_items{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px,max-content));
+        grid-gap: 20px;
+        .get-analysis_item{
+          background-color: blue;
+          &_text{
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            line-height: 1.4;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

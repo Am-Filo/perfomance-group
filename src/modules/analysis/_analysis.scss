@@ -1,0 +1,78 @@
+section.analysis{
+  padding: 50px;
+  background-color: #F3F3F5;
+
+  .analysis_wrap{
+    .lm_analysis_title{
+      width: 100%;
+      display: block;
+      .lm_title{
+        display: block;
+        font-weight: bold;
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        margin: 30px 0 50px 0;
+      }
+    }
+    .analysis_content{
+      .analysis_table{
+        table-layout: fixed;
+        border-collapse: collapse;
+        font-family: $mainFont;
+
+        thead,tbody{
+          tr{
+            td,th{
+              width: 33.33333%;
+              border: none;
+            }
+          }
+        }
+
+        thead{
+          tr{
+            th{
+              color: white;
+              font-weight: 300;
+              padding: 10px 0;
+              font-size: 20px;
+
+              &:nth-child(1){
+                background-color: #00b7f3;
+              }
+              
+              &:nth-child(2){
+                background-color: #05598d;
+                border-left: 4px solid white;
+                border-right: 4px solid white;
+              }
+              
+              &:nth-child(3){
+                background-color: #1d7db7;
+              }
+            }
+          }
+        }
+
+        tbody{
+          tr{
+            &:nth-child(even){
+              background-color: white;
+            }
+
+            td{
+              padding: 5px 20px;
+              font-size: 16px;
+              line-height: 1.4;
+
+              .analysis_table_title{
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

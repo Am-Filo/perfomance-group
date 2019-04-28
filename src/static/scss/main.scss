@@ -32,6 +32,15 @@
 @import "../../modules/footer/footer";
 @import "../../modules/modal/modal";
 
+// new
+
+@import "../../modules/header/header_inner";
+@import "../../modules/contact/map";
+@import "../../modules/analysis/analysis";
+@import "../../modules/audit/audit";
+@import "../../modules/get-analysis/get-analysis";
+@import "../../modules/analysis-specialists/analysis-specialists";
+
 body {
 	min-width: 320px;
 	position: relative;
