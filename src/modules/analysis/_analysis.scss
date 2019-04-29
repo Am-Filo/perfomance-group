@@ -1,5 +1,5 @@
 section.analysis{
-  padding: 50px;
+  padding: 50px 100px;
   background-color: #F3F3F5;
 
   .analysis_wrap{
@@ -35,21 +35,21 @@ section.analysis{
             th{
               color: white;
               font-weight: 300;
-              padding: 10px 0;
+              padding: 20px 0;
               font-size: 20px;
 
               &:nth-child(1){
-                background-color: #00b7f3;
+                background-color: #00B7F3;
               }
-              
+
               &:nth-child(2){
-                background-color: #05598d;
-                border-left: 4px solid white;
-                border-right: 4px solid white;
+                background-color: #2F5F87;
+                border-left: 6px solid white;
+                border-right: 6px solid white;
               }
-              
+
               &:nth-child(3){
-                background-color: #1d7db7;
+                background-color: #4A97B5;
               }
             }
           }
@@ -62,12 +62,18 @@ section.analysis{
             }
 
             td{
-              padding: 5px 20px;
-              font-size: 16px;
-              line-height: 1.4;
+              padding: 20px 25px;
+              font-size: 15px;
+			  line-height: 1.4;
+			  font-weight: 500;
 
               .analysis_table_title{
-                font-weight: 600;
+				font-weight: 600;
+
+				&:before{
+					content: '';
+					background-image: attr(data-image url);
+				}
               }
             }
           }

@@ -30,21 +30,36 @@
 
 <body>
 
-    @@include('../modules/header/header_inner.html')
-    
-    @@include('../modules/analysis/analysis.html')
-    
-		@@include('../modules/get-analysis/get-analysis.html')
+	@@include('../modules/header/header_inner.html', {
+		"title": "Глубокая аналитика <br> вашего проекта",
+		"page_info": {
+			"active": true,
+			"subtitle": "более чем по 20 показателям"
+		},
+		"breadcrumbs": {
+			"active": true,
+			"title": "Аналитика"
+		},
+		"header_buttons": {
+			"active": true,
+			"btn_text_1": "Узнать больше",
+			"btn_text_2": "Заказать услугу"
+		}
+	})
 
-    @@include('../modules/indicators/indicators.html')
-    
-    @@include('../modules/analysis-specialists/analysis-specialists.html')
-    
-    @@include('../modules/audit/audit.html')
+	@@include('../modules/analysis/analysis.html')
 
-		@@include('../modules/footer/footer.html')
+	@@include('../modules/get-analysis/get-analysis.html')
 
-		@@include('../modules/modal/modal.html')
+	@@include('../modules/indicators/indicators.html')
+
+	@@include('../modules/analysis-specialists/analysis-specialists.html')
+
+	@@include('../modules/audit/audit.html')
+
+	@@include('../modules/footer/footer.html')
+
+	@@include('../modules/modal/modal.html')
 
 	<script src="assets/js/scripts.min.js"></script>
 

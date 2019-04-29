@@ -30,7 +30,7 @@ header {
 			padding: 100px 0;
 		}
 
-		&_company {
+		&_company{
 			color: $white;
 			line-height: 2;
 			transition: 0.5s;
@@ -73,6 +73,48 @@ header {
 
 				@include b(320) {
 					font-size: 14px;
+				}
+			}
+
+			&_page {
+				&_title {
+					text-transform: uppercase;
+					font-size: 4em;
+					font-weight: 600;
+					line-height: 1;
+
+					@include b(tablet) {
+						font-size: 5vw;
+					}
+
+					@include b(450) {
+						font-size: 2em;
+					}
+
+					@include b(320) {
+						font-size: 20px;
+						line-height: 1.2;
+					}
+				}
+
+				&_subtitle {
+					font-size: 1.5em;
+					font-weight: 200;
+					display: block;
+					margin: 50px 0 50px 0;
+
+					@include b(tablet) {
+						font-size: 3.5vw;
+					}
+
+					@include b(450) {
+						font-size: 1.2em;
+						line-height: 1;
+					}
+
+					@include b(320) {
+						font-size: 14px;
+					}
 				}
 			}
 		}

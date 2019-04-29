@@ -19,20 +19,35 @@
 	</div>
 
 	<div class="lm_container header-inner_wrap">
+		@@if (breadcrumbs.active === true) {
 		<div class="breadcrumbs">
-      <ul class="breadcrumbs_items">
-        <li class="breadcrumb_item">
-          <a href="/">Главная</a>
-        </li>
-        <li class="breadcrumb_separate">/</li>
-        <li class="breadcrumb_active">
-          <span>Контакты</span>
-        </li>
-      </ul>
-    </div>
-    <div class="header-inner_wrap_title">
-      <h1 class="title_text">Наши контакты</h1>
-    </div>
+			<ul class="breadcrumbs_items">
+				<li class="breadcrumb_item">
+					<a href="/">Главная</a>
+				</li>
+				<li class="breadcrumb_separate">/</li>
+				<li class="breadcrumb_active">
+					<span>@@breadcrumbs.title</span>
+				</li>
+			</ul>
+		</div>
+		}
+
+		<div data-aos="fade-down" data-aos-duration="1000" class="header_company">
+			<h1 class="header_company_page_title">@@title</h1>
+			@@if (page_info.active === true) {
+			<span class="header_company_page_subtitle">@@page_info.subtitle</span>
+			}
+		</div>
+
+		@@if (header_buttons.active === true) {
+		<div class="header_buttons">
+			<a data-aos="fade-right" data-aos-duration="1000" data-fancybox data-animation-duration="700"
+				data-src="#oModal" href="javascript:;" class="lm_btn__brd">@@header_buttons.btn_text_1</a>
+			<a data-aos="fade-left" data-aos-duration="1000" data-fancybox data-animation-duration="700"
+				data-src="#qModal" href="javascript:;" class="lm_btn__brd_blue">@@header_buttons.btn_text_2 </a>
+		</div>
+		}
 	</div>
 
 </header>
