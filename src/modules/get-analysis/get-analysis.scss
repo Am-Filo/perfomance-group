@@ -1,6 +1,6 @@
 .get-analysis {
 	background-color: #9C97AD;
-	padding: 50px 100px;
+	padding: 50px 0px;
 
 	&_wrap {
 		.get-analysis_title {
@@ -14,7 +14,12 @@
 				font-weight: 500;
 				color: white;
 				text-align: center;
-				margin: 30px 0 80px 0;
+				margin: 0 0 80px 0;
+
+				@include b(600){
+					margin: 0px 0 30px 0;
+					font-size: 20px;
+				}
 			}
 		}
 
@@ -23,7 +28,8 @@
 			.get-analysis_items {
 				display: grid;
 				// grid-template-columns: repeat(auto-fill, minmax(150px, 100%));
-				grid-template-columns: repeat(5, minmax(150px, 100%));
+				// grid-template-columns: repeat(5, minmax(150px, 100%));
+				grid-template-columns: repeat(auto-fit,minmax(150px,230px));
 				grid-gap: 20px;
 				justify-content: center;
 

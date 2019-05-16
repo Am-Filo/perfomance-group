@@ -31,30 +31,29 @@
 <body>
 
 	@@include('../modules/header/header_inner.html', {
-		"title": "Глубокая аналитика <br> вашего проекта",
+		"title": "Повышение конверсии и ROI",
 		"page_info": {
-			"page": "company",
+      "page": "keys",
 			"active": true,
-			"subtitle": "более чем по 20 показателям"
+      "subtitle": "Для интернет-магазина Mebelbor.ru",
+      "image": "https://placehold.it/600x320"
 		},
 		"breadcrumbs": {
 			"active": true,
 			"title": "Аналитика"
 		},
 		"header_buttons": {
-			"active": true,
+			"active": false,
 			"btn_text_1": "Узнать больше",
 			"btn_text_2": "Заказать услугу"
 		}
 	})
 
-	@@include('../modules/analysis/analysis.html')
+  @@include('../modules/target-task-client/target-task-client.html')
+  
+  @@include('../modules/using-instruments/using-instruments.html')
 
-	@@include('../modules/get-analysis/get-analysis.html')
-
-	@@include('../modules/indicators/indicators.html')
-
-	@@include('../modules/analysis-specialists/analysis-specialists.html')
+  @@include('../modules/results-work/results-work.html')
 
 	@@include('../modules/audit/audit.html')
 

@@ -48,17 +48,21 @@
 		}
 	})
 
-	@@include('../modules/analysis/analysis.html')
-
 	@@include('../modules/get-analysis/get-analysis.html')
 
-	@@include('../modules/indicators/indicators.html')
+  @@include('../modules/audit/audit.html')
+  
+  @@include('../modules/form/form.html', {
+    "title": "У Вас есть вопросы?",
+    "text": "оставьте заявку прямо сейчас и мы ответим на них!",
+    "button": "Отправить"
+  })
 
-	@@include('../modules/analysis-specialists/analysis-specialists.html')
+  @@include('../modules/analysis-specialists/analysis-specialists.html')
 
-	@@include('../modules/audit/audit.html')
-
-	@@include('../modules/footer/footer.html')
+  @@include('../modules/case/case.html')
+  
+  @@include('../modules/footer/footer-without-form.html')
 
 	@@include('../modules/modal/modal.html')
 

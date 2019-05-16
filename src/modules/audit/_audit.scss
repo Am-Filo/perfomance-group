@@ -1,8 +1,10 @@
 .audit {
 	background-color: #66718F;
-	padding: 150px 100px;
+	padding: 100px 20px;
 
 	&_wrap {
+		max-width: 1200px;
+		margin: 0 auto;
 
 		.audit_content {
 			display: grid;
@@ -10,8 +12,16 @@
 			grid-gap: 50px;
 			justify-content: center;
 
+			@include b(800){
+				grid-template-columns: 1fr;
+			}
+
 			.audit_item_left {
 				position: relative;
+
+				@include b(800){
+					display: none;
+				}
 
 				.audit_item_imges {
 					position: relative;

@@ -1,4 +1,11 @@
-<header class="header-inner">
+	@@if (page_info.page === "company" ) {
+	<header class="header-inner">
+	}
+
+	@@if (page_info.page === "keys" ) {
+	<header class="header-inner header-keys">
+	}
+
 
 	<div class="header_menu">
 		<div class="header_menu_wrap">
@@ -33,12 +40,27 @@
 		</div>
 		}
 
-		<div data-aos="fade-down" data-aos-duration="1000" class="header_company">
+		@@if (page_info.page === "company" ) {
+		<div data-aos="fade-down" data-aos-duration="1000"  class="header_company">
+	
 			<h1 class="header_company_page_title">@@title</h1>
-			@@if (page_info.active === true) {
+
+			@@if (page_info.active === true ) {
 			<span class="header_company_page_subtitle">@@page_info.subtitle</span>
 			}
 		</div>
+		}
+
+		@@if (page_info.page === "keys" ) {
+		<div data-aos="fade-down" data-aos-duration="1000"  class="header_keys">
+	
+			<h1 class="header_keys_page_title">@@title</h1>
+
+			@@if (page_info.active === true ) {
+			<span class="header_keys_page_subtitle">@@page_info.subtitle</span>
+			}
+		</div>
+		}
 
 		@@if (header_buttons.active === true) {
 		<div class="header_buttons">
@@ -48,6 +70,13 @@
 				data-src="#qModal" href="javascript:;" class="lm_btn__brd_blue">@@header_buttons.btn_text_2 </a>
 		</div>
 		}
+
+		@@if(page_info.image){
+		<div data-aos="fade-down" data-aos-duration="1000"  class="header_keys-image">
+			<img src="@@page_info.image" alt="">
+		</div>
+		}
+
 	</div>
 
 </header>
