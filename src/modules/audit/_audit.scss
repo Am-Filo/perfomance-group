@@ -1,14 +1,17 @@
 .audit {
-	background-color: #66718F;
+	background-image: url(../img/bg/audit.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	padding: 100px 20px;
 
 	&_wrap {
-		max-width: 1200px;
+		max-width: 1250px;
 		margin: 0 auto;
 
 		.audit_content {
 			display: grid;
-			grid-template-columns: minmax(320px, 600px) minmax(320px, 800px);
+			grid-template-columns: minmax(320px,600px) minmax(320px,600px);
 			grid-gap: 50px;
 			justify-content: center;
 
@@ -45,6 +48,8 @@
 			}
 
 			.audit_item_right {
+				padding-left: 20px;
+
 				.audit_title_wrap {
 					width: 100%;
 					display: block;
@@ -56,7 +61,7 @@
 						color: white;
 						text-align: left;
 						margin: 0;
-						line-height: 1.2;
+						line-height: 1.5;
 						margin-bottom: 30px;
 
 						&:after{
@@ -72,7 +77,8 @@
 
 				.audit_text{
 					color: white;
-					font-size: 14px;
+					font-size: 15px;
+    			font-weight: 500;
 				}
 			}
 		}

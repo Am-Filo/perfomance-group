@@ -30,39 +30,146 @@
 
 <body>
 
-	@@include('../modules/header/header_inner.html', {
-		"title": "Глубокая аналитика <br> вашего проекта",
+	@@include('../modules/header/header-main.html', {
+		"title": "Привлечение целевого трафика",
+		"bg_image": "assets/img/bg/traffic.png",
 		"page_info": {
-			"page": "company",
+			"page": "_s3",
 			"active": true,
-			"subtitle": "более чем по 20 показателям"
+			"subtitle": "совмещаем несколько каналов трафика<br>и внедряем глубокую аналитику"
 		},
 		"breadcrumbs": {
 			"active": true,
-			"title": "Аналитика"
+			"items": [
+				{
+					"link": "/",
+					"title": "Главная"
+				},
+				{
+					"link": "/category",
+					"title": "Категория"
+				},
+				{
+					"link": "/traffic",
+					"title": "Траффик"
+				}
+			]
 		},
 		"header_buttons": {
 			"active": true,
-			"btn_text_1": "Узнать больше",
-			"btn_text_2": "Заказать услугу"
+			"btn_text_1": "Задать вопрос",
+			"btn_text_2": "Рссчитать бюджет"
 		}
 	})
 
-	@@include('../modules/get-analysis/get-analysis.html')
+	@@include('../modules/get-analysis/get-analysis.html', {
+    "title": {
+			"active": false,
+			"text": "",
+			"subtext": ""
+		},
+		"type": {
+			"page": "dynamic"
+		},
+		"items": [
+			{
+				"img": "/assets/img/prop/get-analysis/traffic/context.png",
+				"imgAlt": "Контекстная реклама",
+				"text": "Контекстная<br>реклама"
+			},
+			{
+				"img": "/assets/img/prop/get-analysis/traffic/target.png",
+				"imgAlt": "Таргетированная реклама",
+				"text": "Таргетированная<br>реклама"
+			},
+			{
+				"img": "/assets/img/prop/get-analysis/traffic/seo.png",
+				"imgAlt": "SEO продвижение",
+				"text": "SEO<br>продвижение"
+			},
+			{
+				"img": "/assets/img/prop/get-analysis/traffic/product.png",
+				"imgAlt": "Товарная реклама",
+				"text": "Товарная<br>реклама"
+			},
+			{
+				"img": "/assets/img/prop/get-analysis/traffic/mobile.png",
+				"iimgAltmg": "Мобильный трафик",
+				"text": "Мобильный<br>трафик"
+			}
+		]
+  })
 
   @@include('../modules/funnel/funnel.html')
 
-  @@include('../modules/audit/audit.html')
+	@@include('../modules/audit/audit.html',{
+		"title": "Умеем работать на<br> результат!",
+		"text": "<p>Равным образом консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Таким образом сложившаяся структура организации играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Товарищи! сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития. Товарищи! сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.</p><br><p>Идейные соображения высшего порядка, а также реализация намеченных плановых заданий играет важную роль в формировании направлений прогрессивного развития. С другой стороны постоянный количественный рост и сфера нашей активности требуют от нас анализа соответствующий условий активизации. Равным образом сложившаяся структура организации способствует подготовки и реализации систем массового участия.</p>",
+		"images": {
+			"first": "/assets/img/prop/audit/first.png",
+			"second": "/assets/img/prop/audit/second.png"
+		}
+	})
 
   @@include('../modules/form/form.html', {
-    "title": "У Вас есть вопросы?",
-    "text": "оставьте заявку прямо сейчас и мы ответим на них!",
-    "button": "Отправить"
+		"bg_img": "assets/img/bg/lead-form-traffic.png",
+		"class": "form_s3",
+    "title": "Сколько заявок в неделю",
+    "text": "вы готовы получать и обрабатывать?",
+		"button": "Заказать",
+		"inputs":[
+			{
+				"type": "text",
+				"text": "Ваше имя"
+			},
+			{
+				"type": "tel",
+				"text": "Ваш телефон"
+			},
+			{
+				"type": "number",
+				"text": "Кол-во заявок"
+			}
+		]
   })
 
-  @@include('../modules/analysis-specialists/analysis-specialists.html')
+  @@include('../modules/analysis-specialists/analysis-specialists.html',{
+		"title": "Сертифицированные специалисты в штате",
+		"items": [
+			{
+				"img": "assets/img/prop/specialists/y.direct.png",
+				"imgAlt": "Яндекс.Директ",
+				"text": "Яндекс.Директ"
+			},
+			{
+				"img": "assets/img/prop/specialists/google.ads.png",
+				"imgAlt": "Google.Ads",
+				"text": "Google.Ads"
+			},
+			{
+				"img": "assets/img/prop/specialists/y.metrica.png",
+				"imgAlt": "Яндекс.Метрика",
+				"text": "Яндекс.Метрика"
+			},
+			{
+				"img": "assets/img/prop/specialists/google.analytics.png",
+				"imgAlt": "Google.Analytics",
+				"text": "Google.Analytics"
+			},
+			{
+				"img": "assets/img/prop/specialists/roistat.png",
+				"imgAlt": "Roistat",
+				"text": "Roistat"
+			}
+		]
+	})
 
-  @@include('../modules/case/case.html')
+	@@include('../modules/case/case.html')
+	
+	@@include('../modules/quiz/quiz.html',{
+		"title": "Ответьте<br> на несколько вопросов",
+		"text": "и мы рассчитаем оптимальный бюджет для Вас!"
+	})
 
   @@include('../modules/footer/footer-without-form.html')
 

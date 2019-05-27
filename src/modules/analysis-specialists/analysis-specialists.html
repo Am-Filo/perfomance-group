@@ -1,50 +1,22 @@
 <section class="analysis-specialists">
   <div class="analysis-specialists_wrap">
+
     <div class="analysis-specialists_title">
-      <span class="lm_title">Аналитику проводят<br>сертифицированные специалисты</span>
+      <span class="lm_title">@@title</span>
     </div>
+
     <div class="analysis-specialists_content">
       <div class="analysis-specialists_items">
-        <div class="analysis-specialists_item">
-          <div class="analysis-specialists_item_img">
-            <img src="https://placehold.it/300x150" alt="">
+
+        @@for (var i = 0; i < items.length; i++) {
+          <div class="analysis-specialists_item">
+            <div class="analysis-specialists_item_img">
+              <img src="`+items[i].img+`" alt="`+items[i].imgAlt+`">
+            </div>
+            <span class="analysis-specialists_item_text">`+items[i].text+`</span>
           </div>
-          <span class="analysis-specialists_item_text">
-            Яндекс.Директ
-          </span>
-        </div>
-        <div class="analysis-specialists_item">
-          <div class="analysis-specialists_item_img">
-            <img src="https://placehold.it/300x150" alt="">
-          </div>
-          <span class="analysis-specialists_item_text">
-            Google.Ads
-          </span>
-        </div>
-        <div class="analysis-specialists_item">
-          <div class="analysis-specialists_item_img">
-            <img src="https://placehold.it/300x150" alt="">
-          </div>
-          <span class="analysis-specialists_item_text">
-            Яндекс.Метрика
-          </span>
-        </div>
-        <div class="analysis-specialists_item">
-          <div class="analysis-specialists_item_img">
-            <img src="https://placehold.it/300x150" alt="">
-          </div>
-          <span class="analysis-specialists_item_text">
-            Google.Analytics
-          </span>
-        </div>
-        <div class="analysis-specialists_item">
-          <div class="analysis-specialists_item_img">
-            <img src="https://placehold.it/300x150" alt="">
-          </div>
-          <span class="analysis-specialists_item_text">
-            Roistat
-          </span>
-        </div>
+        }
+
       </div>
     </div>
   </div>

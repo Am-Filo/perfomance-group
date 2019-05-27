@@ -1,0 +1,71 @@
+<header class="header-inner@@page_info.page" style="background-image: url(@@bg_image);">
+	<div class="header_menu">
+		<div class="header_menu_wrap">
+			<div class="logo">
+				<img src="assets/img/logo.png" alt="perfomance group">
+			</div>
+			<div class="menu">
+				<span class="active" href="#">Услуги</span>
+				<span href="#">Оптимизация</span>
+				<span href="#">Наш подход</span>
+				<span href="#">Наши кейсы</span>
+				<span href="#">Технологии</span>
+			</div>
+			<div class="phone">
+				<a href="tel:+78126655112">+7(812) 665-51-12</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="lm_container header-inner_wrap">
+
+		@@if (breadcrumbs.active === true) {
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs_items">
+
+        @@for (var i = 0; i < breadcrumbs.items.length; i++) {
+
+          @@if((`+i+`) === breadcrumbs.items.length){
+            <li class="breadcrumb_active">
+              <span>@@breadcrumbs.items.title</span>ыв
+            </li>
+          }
+
+          <li class="breadcrumb_item">
+            <a href="`+breadcrumbs.items[i].link+`">`+breadcrumbs.items[i].title+`</a>
+          </li>
+          <li class="breadcrumb_separate">/</li>
+          
+        }
+
+			</ul>
+		</div>
+		}
+
+		<div data-aos="fade-down" data-aos-duration="1000"  class="header@@page_info.page">
+	
+			<h1 class="header_page_title">@@title</h1>
+
+			@@if (page_info.active === true ) {
+			<span class="header_page_subtitle">@@page_info.subtitle</span>
+			}
+		</div>
+
+		@@if (header_buttons.active === true) {
+		<div class="header_buttons">
+			<a data-aos="fade-right" data-aos-duration="1000" data-fancybox data-animation-duration="700"
+				data-src="#oModal" href="javascript:;" class="lm_btn__brd">@@header_buttons.btn_text_1</a>
+			<a data-aos="fade-left" data-aos-duration="1000" data-fancybox data-animation-duration="700"
+				data-src="#qModal" href="javascript:;" class="lm_btn__brd_blue">@@header_buttons.btn_text_2 </a>
+		</div>
+		}
+
+		@@if(page_info.image){
+		<div data-aos="fade-down" data-aos-duration="1000"  class="header_keys-image">
+			<img src="@@page_info.image" alt="">
+		</div>
+		}
+
+	</div>
+
+</header>

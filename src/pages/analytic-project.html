@@ -50,11 +50,45 @@
 
 	@@include('../modules/analysis/analysis.html')
 
-	@@include('../modules/get-analysis/get-analysis.html')
+	@@include('../modules/get-analysis/get-analysis.html', {
+    "title": {
+			"active": false,
+			"text": "",
+			"subtext": ""
+		},
+		"type": {
+			"page": "traffic"
+		},
+		"items": [
+			{
+				"img": "/assets/img/prop/",
+				"imgAlt": "Контекстная реклама",
+				"text": "Контекстная<br>реклама"
+			},
+			{
+				"img": "/assets/img/prop/",
+				"imgAlt": "Таргетированная реклама",
+				"text": "Таргетированная<br>реклама"
+			},
+			{
+				"img": "/assets/img/prop/",
+				"imgAlt": "SEO продвижение",
+				"text": "SEO<br>продвижение"
+			},
+			{
+				"img": "/assets/img/prop/",
+				"imgAlt": "Товарная реклама",
+				"text": "Товарная<br>реклама"
+			},
+			{
+				"img": "/assets/img/prop/",
+				"iimgAltmg": "Мобильный трафик",
+				"text": "Мобильный<br>трафик"
+			}
+		]
+  })
 
 	@@include('../modules/indicators/indicators.html')
-
-	@@include('../modules/analysis-specialists/analysis-specialists.html')
 
 	@@include('../modules/audit/audit.html')
 

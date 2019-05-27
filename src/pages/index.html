@@ -35,9 +35,20 @@
 		@@include('../modules/indicators/indicators.html')
 
 		@@include('../modules/form/form.html', {
+			"bg_img": "assets/img/prop/middle_form.png",
 			"title": "У Вас есть вопросы?",
 			"text": "оставьте заявку прямо сейчас и мы ответим на них!",
-			"button": "Отправить"
+			"button": "Отправить",
+			"inputs":[
+			{
+				"type": "text",
+				"text": "Ваше имя"
+			},
+			{
+				"type": "tel",
+				"text": "Ваш телефон"
+			}
+		]
 		})
 
 		@@include('../modules/approach/approach.html')

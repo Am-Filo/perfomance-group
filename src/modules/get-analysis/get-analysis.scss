@@ -1,6 +1,6 @@
 .get-analysis {
-	background-color: #9C97AD;
-	padding: 50px 0px;
+	background-color: #f2f3f7;
+	padding: 100px 0px;
 
 	&_wrap {
 		.get-analysis_title {
@@ -23,26 +23,44 @@
 			}
 		}
 
-		.get-analysis_content {
+		.get-analysis_content_simple{
 			margin-bottom: 50px;
+		}
+
+		.get-analysis_content_simple,
+		.get-analysis_content_dynamic{
+
 			.get-analysis_items {
 				display: grid;
-				// grid-template-columns: repeat(auto-fill, minmax(150px, 100%));
-				// grid-template-columns: repeat(5, minmax(150px, 100%));
 				grid-template-columns: repeat(auto-fit,minmax(150px,230px));
 				grid-gap: 20px;
 				justify-content: center;
 
-				.get-analysis_item {
-					background-color: #2E4577;
+				.get-analysis_item_simple{
 					min-height: 300px;
-					display: flex;
-					flex-direction: column;
-					// justify-content: center;
-					align-items: center;
 					padding-top: 50px;
 
-					&_text {
+					.get-analysis_item_img{
+						margin-bottom: 20px;
+					}
+				}
+				
+				.get-analysis_item_dynamic{
+					padding: 40px 0;
+
+					.get-analysis_item_img{
+						margin-bottom: 30px;
+					}
+				}
+				
+				.get-analysis_item_simple,
+				.get-analysis_item_dynamic {
+					background-color: #2e4576;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					.get-analysis_item_text {
 						color: white;
 						text-align: center;
 						display: flex;
@@ -54,10 +72,8 @@
 						font-size: 18px;
 						letter-spacing: 1px;
 					}
-
-					&_img{
+					.get-analysis_item_img{
 						border-radius: 10em;
-						margin-bottom: 20px;
 					}
 				}
 			}

@@ -4,7 +4,6 @@
 	position: relative;
 	padding: 100px 0;
 	cursor: context-menu;
-	background-image: url(../img/prop/middle_form.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -74,6 +73,24 @@
 	}
 
 	.lm_form_form {
+		.form_s3{
+			grid-template-columns: 250px 250px 150px 250px;
+			grid-template-areas: 'formtext formtel formnumber formbutton''formcheckbox formcheckbox formcheckbox formcheckbox';
+			margin: 50px 0;
+
+			@include b(800) {
+				grid-template-columns: minmax(150px, 300px) minmax(150px, 300px);
+				grid-template-areas: "formtext formtel""formnumber formnumber""formcheckbox formcheckbox""formbutton formbutton";
+				grid-template-rows: 60px 60px 40px 60px;
+			}
+
+			@include b(500) {
+				grid-template-columns: 1fr;
+				grid-template-areas: "formtext""formtel""formnumber""formcheckbox""formbutton";
+				grid-template-rows: repeat(5, 60px);
+			}
+		}
+
 		form {
 			display: grid;
 			grid-template-columns: 250px 250px 250px;
@@ -107,6 +124,10 @@
 
 			input[type=email] {
 				grid-area: formemail;
+			}
+
+			input[type=number] {
+				grid-area: formnumber;
 			}
 
 			button {

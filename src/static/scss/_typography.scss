@@ -312,6 +312,10 @@ img[align="right"] {
 				@include lm-btn(f, #1D7DB7, white, y, f, #00B7F3, white);
 			}
 
+			&_lightblue {
+				@include lm-btn(f, #00B7F3, white, y, f, #1D7DB7, white);
+			}
+
 			&_dark-blue {
 				@include lm-btn(f, #2A5067, white, y, f, #00B7F3, white);
 			}

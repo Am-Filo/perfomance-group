@@ -1,4 +1,15 @@
-.header-inner {
+.header-inner_s3{
+	.breadcrumbs{
+		margin: 0px 0 50px 0;
+	}
+
+	.header_buttons{
+		margin-top: 50px;
+	}
+}
+
+.header-inner,
+.header-inner_s3 {
 	height: auto;
 
 	&_wrap {
@@ -9,8 +20,6 @@
 		margin: 100px 0;
 
 		.breadcrumbs {
-			margin: 30px 0 80px 0;
-
 			&_items {
 				display: flex;
 
