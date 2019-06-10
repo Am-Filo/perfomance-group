@@ -175,7 +175,28 @@
 		"text": "и мы рассчитаем оптимальный бюджет для Вас!"
 	})
 
-  @@include('../modules/footer/footer-without-form.html')
+  @@include('../modules/footer/footer.html',{
+		"bg": "assets/img/prop/footer_form.png",
+		"form": {
+			"active": false,
+			"title": "Возникли вопросы?",
+			"subtitle": "оставьте заявку прямо сейчас, чтобы обсудить Ваш проект",
+			"inputsCount": "2",
+			"buttonText": "Оставить",
+			"inputs": [
+				{
+					"tagName": "input",
+					"type": "text",
+					"placeholder": "Ваше имя"
+				},
+				{
+					"tagName": "input",
+					"type": "tel",
+					"placeholder": "Ваш телефон"
+				}
+			]
+		}
+	})
 
 	@@include('../modules/modal/modal.html')
 

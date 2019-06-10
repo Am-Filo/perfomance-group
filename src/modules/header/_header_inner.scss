@@ -8,6 +8,18 @@
 	}
 }
 
+.header-inner_s2{
+	margin-bottom: 200px;
+	
+	.breadcrumbs{
+		margin: 0px 0 50px 0;
+	}
+
+	.header-inner_wrap{
+		margin-bottom: 250px;
+	}
+}
+
 .header-inner_s1{
 	.breadcrumbs{
 		// margin: 0px 0 50px 0;
@@ -20,6 +32,7 @@
 
 .header-inner,
 .header-inner_s1,
+.header-inner_s2,
 .header-inner_s3 {
 	height: auto;
 

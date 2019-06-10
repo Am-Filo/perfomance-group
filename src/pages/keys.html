@@ -30,24 +30,38 @@
 
 <body>
 
-	@@include('../modules/header/header_inner.html', {
-		"title": "Повышение конверсии и ROI",
-		"page_info": {
-      "page": "keys",
-			"active": true,
-      "subtitle": "Для интернет-магазина Mebelbor.ru",
-      "image": "https://placehold.it/600x320"
-		},
-		"breadcrumbs": {
-			"active": true,
-			"title": "Аналитика"
-		},
-		"header_buttons": {
-			"active": false,
-			"btn_text_1": "Узнать больше",
-			"btn_text_2": "Заказать услугу"
-		}
-	})
+		@@include('../modules/header/header-main.html', {
+			"title": "Повышение конверсии и ROI",
+			"bg_image": "assets/img/bg/traffic.png",
+			"page_info": {
+				"page": "_s2",
+				"active": true,
+				"subtitle": "для интернет-магазина mebelbor.tu",
+				"image": "https://placehold.it/600x320"
+			},
+			"breadcrumbs": {
+				"active": true,
+				"items": [
+					{
+						"link": "/",
+						"title": "Главная"
+					},
+					{
+						"link": "#",
+						"title": "Категория"
+					},
+					{
+						"link": "",
+						"title": "Актуальная страница"
+					}
+				]
+			},
+			"header_buttons": {
+				"active": false,
+				"btn_text_1": "Узнать больше",
+				"btn_text_2": "Заказать услугу"
+			}
+		})
 
   @@include('../modules/target-task-client/target-task-client.html')
   
@@ -57,7 +71,28 @@
 
 	@@include('../modules/audit/audit.html')
 
-	@@include('../modules/footer/footer.html')
+	@@include('../modules/footer/footer.html',{
+		"bg": "assets/img/prop/footer_form.png",
+		"form": {
+			"active": true,
+			"title": "Возникли вопросы?",
+			"subtitle": "оставьте заявку прямо сейчас, чтобы обсудить Ваш проект",
+			"inputsCount": "2",
+			"buttonText": "Оставить",
+			"inputs": [
+				{
+					"tagName": "input",
+					"type": "text",
+					"placeholder": "Ваше имя"
+				},
+				{
+					"tagName": "input",
+					"type": "tel",
+					"placeholder": "Ваш телефон"
+				}
+			]
+		}
+	})
 
 	@@include('../modules/modal/modal.html')
 

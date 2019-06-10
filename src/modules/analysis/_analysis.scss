@@ -1,79 +1,190 @@
-section.analysis{
+section.analysis {
   padding: 50px 100px;
   background-color: #F3F3F5;
 
-  .analysis_wrap{
-    .lm_analysis_title{
+  @include b(1000){
+    padding: 50px 20px;
+  }
+
+  @include b(850){
+    padding: 50px 0px;
+  }
+
+  .analysis_wrap {
+    .lm_analysis_title {
       width: 100%;
       display: block;
-      .lm_title{
+
+      .lm_title {
         display: block;
         font-weight: bold;
-        font-size: 30px;
-        color: black;
+        font-size: 35px;
+        color: #424856;
         text-align: center;
         margin: 30px 0 50px 0;
       }
     }
-    .analysis_content{
-      .analysis_table{
+
+    .analysis_content {
+      .analysis_table {
         table-layout: fixed;
         border-collapse: collapse;
         font-family: $mainFont;
 
-        thead,tbody{
-          tr{
-            td,th{
+        thead,
+        tbody {
+          tr {
+
+            td,
+            th {
               width: 33.33333%;
               border: none;
             }
           }
         }
 
-        thead{
-          tr{
-            th{
+        thead {
+
+          @include b(850){
+            display: none;
+          }
+
+          tr {
+            th {
               color: white;
               font-weight: 300;
-              padding: 20px 0;
+              padding: 15px 0;
               font-size: 20px;
 
-              &:nth-child(1){
+              &:nth-child(1) {
                 background-color: #00B7F3;
               }
 
-              &:nth-child(2){
+              &:nth-child(2) {
                 background-color: #2F5F87;
                 border-left: 6px solid white;
                 border-right: 6px solid white;
               }
 
-              &:nth-child(3){
+              &:nth-child(3) {
                 background-color: #4A97B5;
               }
             }
           }
         }
 
-        tbody{
-          tr{
-            &:nth-child(even){
+        tbody {
+
+          @include b(850){
+            display: flex;
+            flex-direction: column;
+          }
+
+          tr {
+
+            @include b(850){
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              text-align: center;
+              justify-content: space-around;
+            }
+
+            &:nth-child(even) {
               background-color: white;
             }
 
-            td{
+            td {
               padding: 20px 25px;
               font-size: 15px;
-			  line-height: 1.4;
-			  font-weight: 500;
+              line-height: 1.4;
+              font-weight: 500;
+              color: #848389;
 
-              .analysis_table_title{
-				font-weight: 600;
+              @include b(850) {
+                padding: 20px 5px;
 
-				&:before{
-					content: '';
-					background-image: attr(data-image url);
-				}
+                &:nth-child(1) {
+                  display: flex;
+                  width: 100%;
+                  justify-content: center;
+                  padding: 15px;
+                  border-top: 1px solid gray;
+                  margin-bottom: 10px;
+                }
+                
+                &:nth-child(2) {
+                  width: 45%;
+                  display: block;
+
+                  &:before{
+                    content: attr(data-columname);
+                    display: block;
+                    color: #2f5f87;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                  }
+                }
+
+                &:nth-child(3) {
+                  width: 45%;
+                  display: block;
+
+                  &:before{
+                    content: attr(data-columname);
+                    display: block;
+                    color: #4a97b5;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+
+              @include b(600) {
+                
+                &:nth-child(2) {
+                  width: 100%;
+                  display: block;
+
+                  &:before{
+                    content: attr(data-columname);
+                    display: block;
+                    color: #2f5f87;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                  }
+                }
+
+                &:nth-child(3) {
+                  width: 100%;
+                  display: block;
+
+                  &:before{
+                    content: attr(data-columname);
+                    display: block;
+                    color: #4a97b5;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+
+              .analysis_table_title {
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                color: black;
+
+                @include b(600){
+                  flex-direction: column;
+                }
+
+                &:before {
+                  @include b(600){
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                  }
+                }
               }
             }
           }

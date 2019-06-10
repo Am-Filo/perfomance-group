@@ -296,6 +296,51 @@ img[align="right"] {
 		}
 	}
 
+	&_icon-traffic {
+		@include before-img(inline-block, 45px, 45px, r) {
+			background-image: url(../img/icons/analysis/traffic.png);
+			margin-right: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	&_icon-page {
+		@include before-img(inline-block, 45px, 45px, r) {
+			background-image: url(../img/icons/analysis/page.png);
+			margin-right: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	&_icon-audience {
+		@include before-img(inline-block, 45px, 45px, r) {
+			background-image: url(../img/icons/analysis/audience.png);
+			margin-right: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	&_icon-data {
+		@include before-img(inline-block, 45px, 45px, r) {
+			background-image: url(../img/icons/analysis/data.png);
+			margin-right: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	&_icon-analysis {
+		@include before-img(inline-block, 45px, 45px, r) {
+			background-image: url(../img/icons/analysis/analysis.png);
+			margin-right: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
 	&_btn {
 		&__brd {
 			@include lm-btn(b, white, white, y, f, white, black);

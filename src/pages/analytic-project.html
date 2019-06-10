@@ -58,6 +58,8 @@
 		}
 	})
 
+	@@include('../modules/analysis/analysis.html')
+
 	@@include('../modules/get-analysis/get-analysis.html', {
 		"bg":{
 			"active": true,
@@ -142,7 +144,28 @@
 		}
 	})
 
-	@@include('../modules/footer/footer.html')
+	@@include('../modules/footer/footer.html',{
+		"bg": "assets/img/bg/lead-form-analyz.png",
+		"form": {
+			"active": true,
+			"title": "Закажите анализ вашего проекта",
+			"subtitle": "прямо сейчас и мы перезвоним вам!",
+			"inputsCount": "2",
+			"buttonText": "Заказать",
+			"inputs": [
+				{
+					"tagName": "input",
+					"type": "text",
+					"placeholder": "Ваше имя"
+				},
+				{
+					"tagName": "input",
+					"type": "tel",
+					"placeholder": "Ваш телефон"
+				}
+			]
+		}
+	})
 
 	@@include('../modules/modal/modal.html')
 
