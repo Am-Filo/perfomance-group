@@ -61,8 +61,10 @@
 		}
 
 		@@if(page_info.image){
-		<div data-aos="fade-down" data-aos-duration="1000"  class="header_keys-image">
-			<img src="@@page_info.image" alt="">
+		<div data-aos="fade-down" data-aos-duration="1000"  class="header_keys">
+			<div class="header_keys__wrap">
+				<div class="header_keys__wrap__item" style="background-image: url(@@page_info.image)"></div>
+			</div>
 		</div>
 		}
 

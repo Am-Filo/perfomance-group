@@ -292,10 +292,9 @@ header {
 			text-transform: uppercase;
 			color: white;
 			margin-bottom: 150px;
-
-			// ~.breadcrumbs{
-			// 	margin: 30px 0 50px 0 !important;
-			// }
+			width: 100%;
+    	justify-content: center;
+    	display: flex;
 
 			&_page_title {
 				font-size: 40px;
@@ -306,9 +305,26 @@ header {
 				font-size: 40px;
 			}
 
-			&-image {
+			&__wrap {
 				position: absolute;
-				margin-top: 330px;
+				height: 320px;
+				width: 600px;
+				background-image: url(../img/prop/mac.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				display: flex;
+				justify-content: center;
+				margin-top: 80px;
+
+				&__item{
+					height: 253px;
+					width: 400px;
+					margin-top: 18px;
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
 			}
 		}
 
