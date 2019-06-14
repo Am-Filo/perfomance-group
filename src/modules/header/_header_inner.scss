@@ -20,20 +20,17 @@
 	}
 }
 
-.header-inner_s1{
-	.breadcrumbs{
-		// margin: 0px 0 50px 0;
-	}
-
-	.header_buttons{
-		// margin-top: 50px;
+.header-inner_s4{
+	.header-inner_wrap{
+		margin: 100px 0 0px 0;
 	}
 }
 
 .header-inner,
 .header-inner_s1,
 .header-inner_s2,
-.header-inner_s3 {
+.header-inner_s3,
+.header-inner_s4 {
 	height: auto;
 
 	&_wrap {

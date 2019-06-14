@@ -2,13 +2,13 @@
 	@@if(form.active){
 		<div class="lm_form_wrap">
 			<div class="lm_form_title">
-				<span class="lm_form_title_first">Возникли вопросы?</span>
-				<span class="lm_form_title_second">оставьте заявку прямо сейчас, чтобы обсудить Ваш проект</span>
+				<span class="lm_form_title_first">@@title</span>
+				<span class="lm_form_title_second">@@subtitle</span>
 			</div>
 			<div class="lm_form_form">
-				<form @@if(form.inputsCount ===4){class="form_inner_footer"} action="">
+				<form @@if(form.inputsCount === "4"){class="form_inner_footer"} action="">
 					@@for (var i = 0; i < form.inputs.length; i++) {
-						<`+form.inputs[i].tagName+` class="lm_input" required type="`+form.inputs[i].type+`" placeholder="`+form.inputs[i].placeholder+`">
+						<`+form.inputs[i].tagName+` class="lm_input" required type="`+form.inputs[i].type+`" placeholder="`+form.inputs[i].placeholder+`"></`+form.inputs[i].tagName+`>
 					}
 					<button class="lm_btn__fill_blue" type="submit">@@form.buttonText</button>
 					<div class="lm_form-group_checkbox">

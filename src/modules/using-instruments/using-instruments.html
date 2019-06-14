@@ -3,50 +3,24 @@
 
     <div class="using-instruments_info">
       <span class="using-instruments_info-title">
-        Используемые инструменты
+        @@title
       </span>
       <p class="using-instruments_info-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum facilis culpa repudiandae exercitationem non, delectus accusamus. Voluptate, id officiis. Atque voluptas, recusandae aperiam culpa pariatur perferendis consequatur! Consequatur iste est cupiditate. Nulla accusantium fugiat velit animi eum ducimus ipsam, laborum asperiores libero dolore exercitationem enim et adipisci, soluta nisi.
+        @@text
       </p>
     </div>
 
     <div class="using-instruments_instruments">
 
-      <div class="using-instruments_instruments-item">
-        <div class="using-instruments_instruments-item_image">
-          <img src="https://placehold.it/180x80" alt="">
+      @@for (var i = 0; i < items.length; i++) {
+        <div class="using-instruments_instruments-item">
+          <div class="using-instruments_instruments-item_image">
+            <img src="`+items[i].img+`" alt="`+items[i].imgAlt+`">
+          </div>
+          <span class="using-instruments_instruments-item_text">`+items[i].title+`</span>
         </div>
-        <span class="using-instruments_instruments-item_text">lorem</span>
-      </div>
-
-      <div class="using-instruments_instruments-item">
-        <div class="using-instruments_instruments-item_image">
-          <img src="https://placehold.it/180x80" alt="">
-        </div>
-        <span class="using-instruments_instruments-item_text">lorem</span>
-      </div>
-
-      <div class="using-instruments_instruments-item">
-        <div class="using-instruments_instruments-item_image">
-          <img src="https://placehold.it/180x80" alt="">
-        </div>
-        <span class="using-instruments_instruments-item_text">lorem</span>
-      </div>
-
-      <div class="using-instruments_instruments-item">
-        <div class="using-instruments_instruments-item_image">
-          <img src="https://placehold.it/180x80" alt="">
-        </div>
-        <span class="using-instruments_instruments-item_text">lorem</span>
-      </div>
-
-      <div class="using-instruments_instruments-item">
-        <div class="using-instruments_instruments-item_image">
-          <img src="https://placehold.it/180x80" alt="">
-        </div>
-        <span class="using-instruments_instruments-item_text">lorem</span>
-      </div>
-
+      }
+    
     </div>
 
   </div>

@@ -1,17 +1,19 @@
 .results-work{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &_wrap{
     max-width: 1300px;
     margin: 0 auto;
-    padding: 80px 10px;
-
+    padding: 100px 10px;
   }
 
   &_title{
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     
     @include b(900){
       font-size: 30px;
@@ -25,9 +27,9 @@
 
   &_results{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,30%));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     justify-content: space-between;
-    grid-gap: 10px;
+    grid-gap: 40px;
 
     @include b(900){
       grid-template-columns: minmax(300px,1fr);

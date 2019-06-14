@@ -1,24 +1,16 @@
-<section class="results-work">
+<section class="results-work" style="background-image: url(@@img);">
   <div class="results-work_wrap">
 
-    <span class="results-work_title">Результаты проведенных работ:</span>
+    <span class="results-work_title">@@title</span>
 
     <div class="results-work_results">
 
-      <div class="results-work_results-item">
-        <span class="results-work_results-item_number">52</span>
-        <span class="results-work_results-item_text">Вырос<br>показатель<br>ROI</span>
-      </div>
-
-      <div class="results-work_results-item">
-        <span class="results-work_results-item_number">20</span>
-        <span class="results-work_results-item_text">Вырос<br>показатель<br>конверсии</span>
-      </div>
-
-      <div class="results-work_results-item">
-        <span class="results-work_results-item_number">40</span>
-        <span class="results-work_results-item_text">Выросло<br>количество<br>обращений</span>
-      </div>
+      @@for (var i = 0; i < items.length; i++) {
+        <div class="results-work_results-item">
+          <span class="results-work_results-item_number">`+items[i].number+`</span>
+          <span class="results-work_results-item_text">`+items[i].text+`</span>
+        </div>
+      }
 
     </div>
   </div>
