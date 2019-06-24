@@ -6,6 +6,19 @@
   justify-content: flex-end;
   overflow: hidden;
 
+  @include b(500){
+    flex-direction: column-reverse;
+  }
+
+  iframe{
+    position: absolute;
+    
+    @include b(500){
+      position: relative;
+      height: 300px;
+    }
+  }
+
   &_content{
     position: relative;
     top: 0;
@@ -15,6 +28,12 @@
     grid-template-columns: 1fr;
     grid-gap: 15px;
     padding: 110px 85px;
+
+    @include b(850){
+      padding: 50px 35px;
+      grid-gap: 10px;
+    }
+
   }
 
   .content{
@@ -24,6 +43,10 @@
       font-weight: bold;
       display: block;
       color: #424955;
+
+      @include b(850){
+        font-size: 25px;
+      }
     }
 
     &_phone{
@@ -31,6 +54,10 @@
       display: block;
       color: #595d69;
       font-weight: 500;
+      
+      @include b(850){
+        font-size: 20px;
+      }
     }
 
     &_email{
@@ -38,6 +65,10 @@
       display: block;
       color: #595d69;
       font-weight: 500;
+
+      @include b(850){
+        font-size: 15px;
+      }
     }
 
     &_address{
@@ -45,6 +76,10 @@
       display: block;
       color: #595d69;
       font-weight: 500;
+
+      @include b(850){
+        font-size: 15px;
+      }
     }
 
     &_button{
@@ -53,7 +88,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
       padding: 15px 15px;
       font-size: 14px;
       margin-top: 30px;
@@ -62,6 +96,11 @@
       transition: 0.3s;
       font-weight: 600;
       letter-spacing: 1px;
+
+      @include b(850){
+        font-size: 12px;
+        margin-top: 10px;
+      }
 
       &:hover{
         background-color: #3888cd;

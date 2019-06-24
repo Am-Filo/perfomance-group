@@ -64,6 +64,10 @@
 						line-height: 1.5;
 						margin-bottom: 30px;
 
+						@include b(450){
+							font-size: 25px;
+						}
+
 						&:after{
 							width: 70px;
 							background-color: #00B7F3;

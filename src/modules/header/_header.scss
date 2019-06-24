@@ -318,6 +318,17 @@ header {
 				justify-content: center;
 				margin-top: 80px;
 
+				@include b(750){
+					height: 220px;
+					width: 400px;
+					margin-top: 50px;
+				}
+
+				@include b(450){
+					height: 165px;
+					width: 300px;
+				}
+
 				&__item{
 					height: 253px;
 					width: 400px;
@@ -325,6 +336,18 @@ header {
 					background-position: center;
 					background-size: cover;
 					background-repeat: no-repeat;
+
+					@include b(750){
+						height: 170px;
+						width: 270px;
+						margin-top: 14px;
+					}
+					
+					@include b(450){
+						height: 130px;
+						width: 205px;
+						margin-top: 10px;
+					}
 				}
 			}
 		}
