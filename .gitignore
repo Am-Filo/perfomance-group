@@ -2,6 +2,7 @@
 package-lock.json
 /dist/
 /.git/
+/.history/
 /app/css/
 /**/_backstage
 /**/Thumbs.db

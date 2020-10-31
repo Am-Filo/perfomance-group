@@ -400,7 +400,7 @@ header {
 	.header_menu {
 		width: 100%;
 		background-color: rgba(0, 0, 0, .2);
-		position: absolute;
+		position: fixed;
 		display: flex;
 		color: #fff;
 		z-index: 1;

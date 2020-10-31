@@ -9,21 +9,22 @@
 	"author": "lami qv",
 	"license": "ISC",
 	"devDependencies": {
+		"browser-sync": "*",
+		"del": "*",
+		"gulp": "^3.9.1",
 		"gulp-autoprefixer": "*",
+		"gulp-cache": "*",
+		"gulp-clean-css": "*",
+		"gulp-concat": "*",
 		"gulp-file-include": "*",
 		"gulp-imagemin": "*",
-		"gulp-clean-css": "*",
-		"browser-sync": "*",
-		"gulp-rename": "*",
-		"gulp-concat": "*",
-		"gulp-uglify": "*",
 		"gulp-notify": "*",
-		"gulp-cache": "*",
+		"gulp-rename": "*",
 		"gulp-sass": "*",
-		"gulp": "3.9.1",
-		"del": "*"
+		"gulp-uglify": "*"
 	},
 	"dependencies": {
+		"9": "0.0.1",
 		"npm": "^6.9.0"
 	}
 }
